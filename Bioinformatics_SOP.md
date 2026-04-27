@@ -73,6 +73,8 @@ barcode01 | GSAR-ZA-KP-01238
 barcode02 | GSAR-ZA-KP-18293
 barcode03 | GSAR-ZA-EC-28274
 
+<br>
+
 #### 5. Merge pass_filter reads by barcode id
 
 In the run output directory create a directory named `fastq` and combine the demultiplexed read files in `fastq_pass` into separate files named for the isolate IDs. For example:
@@ -87,6 +89,8 @@ do
 done < barcodes.txt
 ```
 
+<br>
+
 >[!NOTE] All subsequent steps will be repeated for each sequenced isolate
 > Perform these steps in a data analysis directory separate from the MinKnow output directory
 
@@ -99,6 +103,8 @@ sourmash_db=`realpath /path/to/gammaproteobacteria.lca.json.gz`
 mlst=`realpath /path/to/mlst_profiler.pl`
 ```
 
+<br>
+
 #### 7.  For each isolate sequence, set variables for the isolate name and path to the sequence reads.
 
 ```Shell
@@ -107,6 +113,7 @@ reads=`realpath /path/to/GSAR-XX-YYYY-MM-DD.fastq.gz` ## Example path to reads
 mkdir -p $iso
 cd $iso
 ```
+
 <br>
 
 #### 8. Activate the first conda environment
@@ -114,8 +121,8 @@ cd $iso
 ```Shell
 conda activate genosar_pt1_env
 ```
-<br>
 
+<br>
 
 #### 9.	Use Nanoplot to assess read counts and quality
 
@@ -267,6 +274,8 @@ sourmash lca classify \
     --query ${iso}.fasta.sig > sourmash.txt
 ```
 
+<br>
+
 #### 15. Sequence typing
 
 Will provide profiles and allele sequences from Pasteur (K pneumo) / PubMLST (E coli)
@@ -277,6 +286,8 @@ ${mlst} \
     -o KP \ 
     -f ${iso}.fasta > mlst.txt
 ```
+
+<br>
 
 #### 16. AMRFinder
 
