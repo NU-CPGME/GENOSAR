@@ -1,0 +1,20 @@
+name: genosar_pt1_env
+channels:
+  - conda-forge
+  - nanoporetech
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.12
+  - nanoplot>=1.46.2
+  - autocycler>=0.5.0
+  - flye>=2.9.6
+  - miniasm>=0.3
+  - minimap2>=2.28
+  - minipolish>=0.2.0
+  - raven-assembler>=1.8.3
+  - bandage_ng
+  - medaka=2.2.0
+  - dnaapler
+  - filtlong
+  - csvlens

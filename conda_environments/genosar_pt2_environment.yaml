@@ -1,0 +1,11 @@
+name: genosar_pt2_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - busco
+  - sourmash
+  - ncbi-amrfinderplus
+  - barrnap=0.9
+  - csvlens
