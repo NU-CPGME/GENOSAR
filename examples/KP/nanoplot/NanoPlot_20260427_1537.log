@@ -1,0 +1,497 @@
+2026-04-27 15:37:30,152 NanoPlot 1.46.2 started with arguments Namespace(threads=8, verbose=False, store=False, raw=False, huge=False, outdir='nanoplot', no_static=False, prefix='', tsv_stats=False, only_report=False, info_in_report=False, maxlength=None, minlength=None, drop_outliers=False, downsample=None, loglength=False, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde', 'dot'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=False, title=None, font_scale=1, dpi=300, hide_stats=False, fastq=None, fasta=None, fastq_rich=['/Users/eoz639/test/genosar/KP.fastq.gz'], fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='nanoplot/')
+2026-04-27 15:37:30,152 Python version is: 3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 17:06:14) [Clang 19.1.7 ]
+2026-04-27 15:37:59,581 Nanoget: Gathered all metrics of 50863 reads
+2026-04-27 15:37:59,598 Calculated statistics
+2026-04-27 15:37:59,598 Using sequenced read lengths for plotting.
+2026-04-27 15:37:59,600 Removed 2 artefactual reads with very short length and very high quality.
+2026-04-27 15:37:59,614 Calculated statistics
+2026-04-27 15:37:59,615 NanoPlot:  Valid color #4CB391.
+2026-04-27 15:37:59,615 NanoPlot:  Valid colormap Greens.
+2026-04-27 15:37:59,616 NanoPlot:  Creating length plots for Read length.
+2026-04-27 15:37:59,616 NanoPlot:  Using 50861 reads maximum of 149000bp.
+2026-04-27 15:37:59,677 Chromium init'ed with kwargs {}
+2026-04-27 15:37:59,677 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:37:59,677 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpy728uw_a.
+2026-04-27 15:37:59,677 Opening browser.
+2026-04-27 15:37:59,678 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpsat7w42e.
+2026-04-27 15:37:59,678 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpsat7w42e
+2026-04-27 15:38:01,814 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpy728uw_a/index.html
+2026-04-27 15:38:01,814 Waiting on all navigates
+2026-04-27 15:38:02,668 All navigates done, putting them all in queue.
+2026-04-27 15:38:02,669 Getting tab from queue (has 1)
+2026-04-27 15:38:02,669 Got E787
+2026-04-27 15:38:02,669 Processing Weighted_histogram_of_read_lengths.png
+2026-04-27 15:38:02,669 Sending big command for Weighted_histogram_of_read_lengths.png.
+2026-04-27 15:38:02,726 Sent big command for Weighted_histogram_of_read_lengths.png.
+2026-04-27 15:38:02,727 Reloading tab E787 before return.
+2026-04-27 15:38:02,787 Putting tab E787 back (queue size: 0).
+2026-04-27 15:38:02,787 Waiting for all cleanups to finish.
+2026-04-27 15:38:02,787 Exiting Kaleido
+2026-04-27 15:38:02,787 Closing browser.
+2026-04-27 15:38:02,789 Closing browser.
+2026-04-27 15:38:02,789 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:02,790 shutil.rmtree worked.
+2026-04-27 15:38:02,790 Cancelling tasks.
+2026-04-27 15:38:02,790 Exiting Kaleido/Choreo
+2026-04-27 15:38:02,886 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:02,886 shutil.rmtree worked.
+2026-04-27 15:38:02,886 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:02,886 shutil.rmtree worked.
+2026-04-27 15:38:02,886 Cancelling tasks.
+2026-04-27 15:38:02,886 Exiting Kaleido/Choreo
+2026-04-27 15:38:02,887 Could not set DPI metadata for nanoplot/WeightedHistogramReadlength.png: No module named 'PIL'
+2026-04-27 15:38:02,887 Saved nanoplot/WeightedHistogramReadlength.png as png (dpi=300)
+2026-04-27 15:38:02,897 Chromium init'ed with kwargs {}
+2026-04-27 15:38:02,897 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:02,898 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpn2mcxull.
+2026-04-27 15:38:02,898 Opening browser.
+2026-04-27 15:38:02,898 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpqajnegak.
+2026-04-27 15:38:02,898 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpqajnegak
+2026-04-27 15:38:03,256 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpn2mcxull/index.html
+2026-04-27 15:38:03,256 Waiting on all navigates
+2026-04-27 15:38:03,971 All navigates done, putting them all in queue.
+2026-04-27 15:38:03,972 Getting tab from queue (has 1)
+2026-04-27 15:38:03,972 Got 3D5C
+2026-04-27 15:38:03,972 Processing Weighted_histogram_of_read_lengths_after_log_transformation.png
+2026-04-27 15:38:03,972 Sending big command for Weighted_histogram_of_read_lengths_after_log_transformation.png.
+2026-04-27 15:38:04,024 Sent big command for Weighted_histogram_of_read_lengths_after_log_transformation.png.
+2026-04-27 15:38:04,025 Reloading tab 3D5C before return.
+2026-04-27 15:38:04,084 Putting tab 3D5C back (queue size: 0).
+2026-04-27 15:38:04,084 Waiting for all cleanups to finish.
+2026-04-27 15:38:04,085 Exiting Kaleido
+2026-04-27 15:38:04,085 Closing browser.
+2026-04-27 15:38:04,086 Closing browser.
+2026-04-27 15:38:04,086 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:04,086 shutil.rmtree worked.
+2026-04-27 15:38:04,086 Cancelling tasks.
+2026-04-27 15:38:04,087 Exiting Kaleido/Choreo
+2026-04-27 15:38:04,185 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:04,185 shutil.rmtree worked.
+2026-04-27 15:38:04,185 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:04,185 shutil.rmtree worked.
+2026-04-27 15:38:04,185 Cancelling tasks.
+2026-04-27 15:38:04,185 Exiting Kaleido/Choreo
+2026-04-27 15:38:04,186 Could not set DPI metadata for nanoplot/WeightedLogTransformed_HistogramReadlength.png: No module named 'PIL'
+2026-04-27 15:38:04,186 Saved nanoplot/WeightedLogTransformed_HistogramReadlength.png as png (dpi=300)
+2026-04-27 15:38:04,194 Chromium init'ed with kwargs {}
+2026-04-27 15:38:04,194 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:04,195 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmphgkkt5gl.
+2026-04-27 15:38:04,195 Opening browser.
+2026-04-27 15:38:04,195 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpnyba97cm.
+2026-04-27 15:38:04,195 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpnyba97cm
+2026-04-27 15:38:04,565 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmphgkkt5gl/index.html
+2026-04-27 15:38:04,566 Waiting on all navigates
+2026-04-27 15:38:05,320 All navigates done, putting them all in queue.
+2026-04-27 15:38:05,321 Getting tab from queue (has 1)
+2026-04-27 15:38:05,321 Got 7A63
+2026-04-27 15:38:05,321 Processing Non_weighted_histogram_of_read_lengths.png
+2026-04-27 15:38:05,321 Sending big command for Non_weighted_histogram_of_read_lengths.png.
+2026-04-27 15:38:05,374 Sent big command for Non_weighted_histogram_of_read_lengths.png.
+2026-04-27 15:38:05,375 Reloading tab 7A63 before return.
+2026-04-27 15:38:05,434 Putting tab 7A63 back (queue size: 0).
+2026-04-27 15:38:05,434 Waiting for all cleanups to finish.
+2026-04-27 15:38:05,434 Exiting Kaleido
+2026-04-27 15:38:05,434 Closing browser.
+2026-04-27 15:38:05,435 Closing browser.
+2026-04-27 15:38:05,436 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:05,436 shutil.rmtree worked.
+2026-04-27 15:38:05,436 Cancelling tasks.
+2026-04-27 15:38:05,436 Exiting Kaleido/Choreo
+2026-04-27 15:38:05,534 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:05,534 shutil.rmtree worked.
+2026-04-27 15:38:05,534 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:05,534 shutil.rmtree worked.
+2026-04-27 15:38:05,534 Cancelling tasks.
+2026-04-27 15:38:05,534 Exiting Kaleido/Choreo
+2026-04-27 15:38:05,535 Could not set DPI metadata for nanoplot/Non_weightedHistogramReadlength.png: No module named 'PIL'
+2026-04-27 15:38:05,535 Saved nanoplot/Non_weightedHistogramReadlength.png as png (dpi=300)
+2026-04-27 15:38:05,544 Chromium init'ed with kwargs {}
+2026-04-27 15:38:05,544 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:05,544 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpbvjmibgo.
+2026-04-27 15:38:05,545 Opening browser.
+2026-04-27 15:38:05,545 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpc8smvl_c.
+2026-04-27 15:38:05,545 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpc8smvl_c
+2026-04-27 15:38:05,929 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpbvjmibgo/index.html
+2026-04-27 15:38:05,929 Waiting on all navigates
+2026-04-27 15:38:06,665 All navigates done, putting them all in queue.
+2026-04-27 15:38:06,665 Getting tab from queue (has 1)
+2026-04-27 15:38:06,666 Got E8F0
+2026-04-27 15:38:06,666 Processing Non_weighted_histogram_of_read_lengths_after_log_transformation.png
+2026-04-27 15:38:06,666 Sending big command for Non_weighted_histogram_of_read_lengths_after_log_transformation.png.
+2026-04-27 15:38:06,719 Sent big command for Non_weighted_histogram_of_read_lengths_after_log_transformation.png.
+2026-04-27 15:38:06,720 Reloading tab E8F0 before return.
+2026-04-27 15:38:06,779 Putting tab E8F0 back (queue size: 0).
+2026-04-27 15:38:06,779 Waiting for all cleanups to finish.
+2026-04-27 15:38:06,779 Exiting Kaleido
+2026-04-27 15:38:06,779 Closing browser.
+2026-04-27 15:38:06,780 Closing browser.
+2026-04-27 15:38:06,781 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,781 shutil.rmtree worked.
+2026-04-27 15:38:06,781 Cancelling tasks.
+2026-04-27 15:38:06,781 Exiting Kaleido/Choreo
+2026-04-27 15:38:06,879 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,880 shutil.rmtree worked.
+2026-04-27 15:38:06,880 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,880 shutil.rmtree worked.
+2026-04-27 15:38:06,880 Cancelling tasks.
+2026-04-27 15:38:06,880 Exiting Kaleido/Choreo
+2026-04-27 15:38:06,880 Could not set DPI metadata for nanoplot/Non_weightedLogTransformed_HistogramReadlength.png: No module named 'PIL'
+2026-04-27 15:38:06,880 Saved nanoplot/Non_weightedLogTransformed_HistogramReadlength.png as png (dpi=300)
+2026-04-27 15:38:06,880 NanoPlot: Creating yield by minimal length plot for Read length.
+2026-04-27 15:38:06,892 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,892 shutil.rmtree worked.
+2026-04-27 15:38:06,892 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,892 shutil.rmtree worked.
+2026-04-27 15:38:06,892 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,892 shutil.rmtree worked.
+2026-04-27 15:38:06,892 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:06,892 shutil.rmtree worked.
+2026-04-27 15:38:06,972 Chromium init'ed with kwargs {}
+2026-04-27 15:38:06,972 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:06,972 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp031j39eu.
+2026-04-27 15:38:06,972 Opening browser.
+2026-04-27 15:38:06,972 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpl0of5jc1.
+2026-04-27 15:38:06,972 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpl0of5jc1
+2026-04-27 15:38:07,368 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp031j39eu/index.html
+2026-04-27 15:38:07,368 Waiting on all navigates
+2026-04-27 15:38:08,109 All navigates done, putting them all in queue.
+2026-04-27 15:38:08,109 Getting tab from queue (has 1)
+2026-04-27 15:38:08,109 Got 48DA
+2026-04-27 15:38:08,109 Processing Yield_by_length.png
+2026-04-27 15:38:08,110 Sending big command for Yield_by_length.png.
+2026-04-27 15:38:08,633 Sent big command for Yield_by_length.png.
+2026-04-27 15:38:08,634 Reloading tab 48DA before return.
+2026-04-27 15:38:08,717 Putting tab 48DA back (queue size: 0).
+2026-04-27 15:38:08,717 Waiting for all cleanups to finish.
+2026-04-27 15:38:08,717 Exiting Kaleido
+2026-04-27 15:38:08,717 Closing browser.
+2026-04-27 15:38:08,719 Closing browser.
+2026-04-27 15:38:08,720 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:08,720 shutil.rmtree worked.
+2026-04-27 15:38:08,720 Cancelling tasks.
+2026-04-27 15:38:08,720 Exiting Kaleido/Choreo
+2026-04-27 15:38:08,816 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:08,816 shutil.rmtree worked.
+2026-04-27 15:38:08,816 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:08,816 shutil.rmtree worked.
+2026-04-27 15:38:08,816 Cancelling tasks.
+2026-04-27 15:38:08,816 Exiting Kaleido/Choreo
+2026-04-27 15:38:08,816 Could not set DPI metadata for nanoplot/Yield_By_Length.png: No module named 'PIL'
+2026-04-27 15:38:08,816 Saved nanoplot/Yield_By_Length.png as png (dpi=300)
+2026-04-27 15:38:08,817 Created length plots
+2026-04-27 15:38:08,817 NanoPlot: Creating Read lengths vs Average read quality plots using 50861 reads.
+2026-04-27 15:38:08,835 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:08,835 shutil.rmtree worked.
+2026-04-27 15:38:08,847 Chromium init'ed with kwargs {}
+2026-04-27 15:38:08,848 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:08,848 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpw4gtueuh.
+2026-04-27 15:38:08,848 Opening browser.
+2026-04-27 15:38:08,848 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp77_38iir.
+2026-04-27 15:38:08,848 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp77_38iir
+2026-04-27 15:38:09,254 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpw4gtueuh/index.html
+2026-04-27 15:38:09,255 Waiting on all navigates
+2026-04-27 15:38:09,983 All navigates done, putting them all in queue.
+2026-04-27 15:38:09,984 Getting tab from queue (has 1)
+2026-04-27 15:38:09,984 Got 9044
+2026-04-27 15:38:09,984 Processing Read_lengths_vs_Average_read_quality_plot_using_dots.png
+2026-04-27 15:38:09,985 Sending big command for Read_lengths_vs_Average_read_quality_plot_using_dots.png.
+2026-04-27 15:38:10,569 Sent big command for Read_lengths_vs_Average_read_quality_plot_using_dots.png.
+2026-04-27 15:38:10,570 Reloading tab 9044 before return.
+2026-04-27 15:38:10,656 Putting tab 9044 back (queue size: 0).
+2026-04-27 15:38:10,656 Waiting for all cleanups to finish.
+2026-04-27 15:38:10,656 Exiting Kaleido
+2026-04-27 15:38:10,656 Closing browser.
+2026-04-27 15:38:10,657 Closing browser.
+2026-04-27 15:38:10,657 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:10,657 shutil.rmtree worked.
+2026-04-27 15:38:10,657 Cancelling tasks.
+2026-04-27 15:38:10,657 Exiting Kaleido/Choreo
+2026-04-27 15:38:10,822 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:10,822 shutil.rmtree worked.
+2026-04-27 15:38:10,822 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:10,822 shutil.rmtree worked.
+2026-04-27 15:38:10,823 Cancelling tasks.
+2026-04-27 15:38:10,823 Exiting Kaleido/Choreo
+2026-04-27 15:38:10,824 Could not set DPI metadata for nanoplot/LengthvsQualityScatterPlot_dot.png: No module named 'PIL'
+2026-04-27 15:38:10,824 Saved nanoplot/LengthvsQualityScatterPlot_dot.png as png (dpi=300)
+2026-04-27 15:38:10,839 Chromium init'ed with kwargs {}
+2026-04-27 15:38:10,839 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:10,839 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp_l5fufos.
+2026-04-27 15:38:10,840 Opening browser.
+2026-04-27 15:38:10,841 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpzjdwc7uk.
+2026-04-27 15:38:10,841 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpzjdwc7uk
+2026-04-27 15:38:11,230 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp_l5fufos/index.html
+2026-04-27 15:38:11,230 Waiting on all navigates
+2026-04-27 15:38:11,954 All navigates done, putting them all in queue.
+2026-04-27 15:38:11,955 Getting tab from queue (has 1)
+2026-04-27 15:38:11,955 Got 4EF8
+2026-04-27 15:38:11,955 Processing Read_lengths_vs_Average_read_quality_kde_plot.png
+2026-04-27 15:38:11,955 Sending big command for Read_lengths_vs_Average_read_quality_kde_plot.png.
+2026-04-27 15:38:12,174 Sent big command for Read_lengths_vs_Average_read_quality_kde_plot.png.
+2026-04-27 15:38:12,175 Reloading tab 4EF8 before return.
+2026-04-27 15:38:12,232 Putting tab 4EF8 back (queue size: 0).
+2026-04-27 15:38:12,232 Waiting for all cleanups to finish.
+2026-04-27 15:38:12,232 Exiting Kaleido
+2026-04-27 15:38:12,232 Closing browser.
+2026-04-27 15:38:12,233 Closing browser.
+2026-04-27 15:38:12,234 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:12,234 shutil.rmtree worked.
+2026-04-27 15:38:12,234 Cancelling tasks.
+2026-04-27 15:38:12,234 Exiting Kaleido/Choreo
+2026-04-27 15:38:12,334 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:12,334 shutil.rmtree worked.
+2026-04-27 15:38:12,334 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:12,335 shutil.rmtree worked.
+2026-04-27 15:38:12,335 Cancelling tasks.
+2026-04-27 15:38:12,335 Exiting Kaleido/Choreo
+2026-04-27 15:38:12,335 Could not set DPI metadata for nanoplot/LengthvsQualityScatterPlot_kde.png: No module named 'PIL'
+2026-04-27 15:38:12,335 Saved nanoplot/LengthvsQualityScatterPlot_kde.png as png (dpi=300)
+2026-04-27 15:38:12,335 Created LengthvsQual plot
+2026-04-27 15:38:12,335 Nanoplotter: Creating heatmap of reads per channel using 50861 reads.
+2026-04-27 15:38:12,346 Chromium init'ed with kwargs {}
+2026-04-27 15:38:12,346 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:12,346 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpdencwoj5.
+2026-04-27 15:38:12,346 Opening browser.
+2026-04-27 15:38:12,347 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmps6271o0o.
+2026-04-27 15:38:12,347 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmps6271o0o
+2026-04-27 15:38:12,720 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpdencwoj5/index.html
+2026-04-27 15:38:12,721 Waiting on all navigates
+2026-04-27 15:38:13,563 All navigates done, putting them all in queue.
+2026-04-27 15:38:13,564 Getting tab from queue (has 1)
+2026-04-27 15:38:13,564 Got B14B
+2026-04-27 15:38:13,564 Processing Number_of_reads_generated_per_channel.png
+2026-04-27 15:38:13,564 Sending big command for Number_of_reads_generated_per_channel.png.
+2026-04-27 15:38:13,619 Sent big command for Number_of_reads_generated_per_channel.png.
+2026-04-27 15:38:13,620 Reloading tab B14B before return.
+2026-04-27 15:38:13,680 Putting tab B14B back (queue size: 0).
+2026-04-27 15:38:13,680 Waiting for all cleanups to finish.
+2026-04-27 15:38:13,680 Exiting Kaleido
+2026-04-27 15:38:13,680 Closing browser.
+2026-04-27 15:38:13,682 Closing browser.
+2026-04-27 15:38:13,682 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,682 shutil.rmtree worked.
+2026-04-27 15:38:13,682 Cancelling tasks.
+2026-04-27 15:38:13,682 Exiting Kaleido/Choreo
+2026-04-27 15:38:13,782 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,782 shutil.rmtree worked.
+2026-04-27 15:38:13,782 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,782 shutil.rmtree worked.
+2026-04-27 15:38:13,782 Cancelling tasks.
+2026-04-27 15:38:13,782 Exiting Kaleido/Choreo
+2026-04-27 15:38:13,782 Could not set DPI metadata for nanoplot/ActivityMap_ReadsPerChannel.png: No module named 'PIL'
+2026-04-27 15:38:13,783 Saved nanoplot/ActivityMap_ReadsPerChannel.png as png (dpi=300)
+2026-04-27 15:38:13,783 Created spatialheatmap for succesfull basecalls.
+2026-04-27 15:38:13,783 Nanoplotter: Creating timeplots using 50861 (full) or 10000 (subsampled dataset) reads.
+2026-04-27 15:38:13,804 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,804 shutil.rmtree worked.
+2026-04-27 15:38:13,804 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,804 shutil.rmtree worked.
+2026-04-27 15:38:13,804 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:13,804 shutil.rmtree worked.
+2026-04-27 15:38:13,805 Chromium init'ed with kwargs {}
+2026-04-27 15:38:13,805 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:13,805 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp6fib7p4m.
+2026-04-27 15:38:13,805 Opening browser.
+2026-04-27 15:38:13,805 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpjd12dtwo.
+2026-04-27 15:38:13,805 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpjd12dtwo
+2026-04-27 15:38:14,193 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp6fib7p4m/index.html
+2026-04-27 15:38:14,193 Waiting on all navigates
+2026-04-27 15:38:14,915 All navigates done, putting them all in queue.
+2026-04-27 15:38:14,916 Getting tab from queue (has 1)
+2026-04-27 15:38:14,916 Got A977
+2026-04-27 15:38:14,916 Processing Cumulative_yield.png
+2026-04-27 15:38:14,916 Sending big command for Cumulative_yield.png.
+2026-04-27 15:38:14,967 Sent big command for Cumulative_yield.png.
+2026-04-27 15:38:14,968 Reloading tab A977 before return.
+2026-04-27 15:38:15,025 Putting tab A977 back (queue size: 0).
+2026-04-27 15:38:15,025 Waiting for all cleanups to finish.
+2026-04-27 15:38:15,025 Exiting Kaleido
+2026-04-27 15:38:15,025 Closing browser.
+2026-04-27 15:38:15,026 Closing browser.
+2026-04-27 15:38:15,026 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:15,026 shutil.rmtree worked.
+2026-04-27 15:38:15,026 Cancelling tasks.
+2026-04-27 15:38:15,026 Exiting Kaleido/Choreo
+2026-04-27 15:38:15,123 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:15,123 shutil.rmtree worked.
+2026-04-27 15:38:15,123 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:15,123 shutil.rmtree worked.
+2026-04-27 15:38:15,123 Cancelling tasks.
+2026-04-27 15:38:15,123 Exiting Kaleido/Choreo
+2026-04-27 15:38:15,124 Could not set DPI metadata for nanoplot/CumulativeYieldPlot_Gigabases.png: No module named 'PIL'
+2026-04-27 15:38:15,124 Saved nanoplot/CumulativeYieldPlot_Gigabases.png as png (dpi=300)
+2026-04-27 15:38:15,146 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:15,146 shutil.rmtree worked.
+2026-04-27 15:38:15,160 Chromium init'ed with kwargs {}
+2026-04-27 15:38:15,160 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:15,161 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpvv4foyc9.
+2026-04-27 15:38:15,161 Opening browser.
+2026-04-27 15:38:15,161 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpv73xovck.
+2026-04-27 15:38:15,161 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpv73xovck
+2026-04-27 15:38:15,549 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpvv4foyc9/index.html
+2026-04-27 15:38:15,550 Waiting on all navigates
+2026-04-27 15:38:16,294 All navigates done, putting them all in queue.
+2026-04-27 15:38:16,294 Getting tab from queue (has 1)
+2026-04-27 15:38:16,294 Got CF17
+2026-04-27 15:38:16,294 Processing Cumulative_yield.png
+2026-04-27 15:38:16,294 Sending big command for Cumulative_yield.png.
+2026-04-27 15:38:16,346 Sent big command for Cumulative_yield.png.
+2026-04-27 15:38:16,347 Reloading tab CF17 before return.
+2026-04-27 15:38:16,406 Putting tab CF17 back (queue size: 0).
+2026-04-27 15:38:16,406 Waiting for all cleanups to finish.
+2026-04-27 15:38:16,406 Exiting Kaleido
+2026-04-27 15:38:16,406 Closing browser.
+2026-04-27 15:38:16,407 Closing browser.
+2026-04-27 15:38:16,408 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:16,408 shutil.rmtree worked.
+2026-04-27 15:38:16,408 Cancelling tasks.
+2026-04-27 15:38:16,408 Exiting Kaleido/Choreo
+2026-04-27 15:38:16,502 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:16,503 shutil.rmtree worked.
+2026-04-27 15:38:16,503 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:16,503 shutil.rmtree worked.
+2026-04-27 15:38:16,503 Cancelling tasks.
+2026-04-27 15:38:16,503 Exiting Kaleido/Choreo
+2026-04-27 15:38:16,503 Could not set DPI metadata for nanoplot/CumulativeYieldPlot_NumberOfReads.png: No module named 'PIL'
+2026-04-27 15:38:16,503 Saved nanoplot/CumulativeYieldPlot_NumberOfReads.png as png (dpi=300)
+2026-04-27 15:38:16,522 Chromium init'ed with kwargs {}
+2026-04-27 15:38:16,522 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:16,522 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpjr2c60pw.
+2026-04-27 15:38:16,522 Opening browser.
+2026-04-27 15:38:16,522 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp45xccxn3.
+2026-04-27 15:38:16,522 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp45xccxn3
+2026-04-27 15:38:16,905 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpjr2c60pw/index.html
+2026-04-27 15:38:16,905 Waiting on all navigates
+2026-04-27 15:38:17,666 All navigates done, putting them all in queue.
+2026-04-27 15:38:17,667 Getting tab from queue (has 1)
+2026-04-27 15:38:17,667 Got DCA9
+2026-04-27 15:38:17,667 Processing Number_of_reads_over_time.png
+2026-04-27 15:38:17,667 Sending big command for Number_of_reads_over_time.png.
+2026-04-27 15:38:17,720 Sent big command for Number_of_reads_over_time.png.
+2026-04-27 15:38:17,721 Reloading tab DCA9 before return.
+2026-04-27 15:38:17,785 Putting tab DCA9 back (queue size: 0).
+2026-04-27 15:38:17,785 Waiting for all cleanups to finish.
+2026-04-27 15:38:17,785 Exiting Kaleido
+2026-04-27 15:38:17,785 Closing browser.
+2026-04-27 15:38:17,786 Closing browser.
+2026-04-27 15:38:17,787 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:17,787 shutil.rmtree worked.
+2026-04-27 15:38:17,787 Cancelling tasks.
+2026-04-27 15:38:17,787 Exiting Kaleido/Choreo
+2026-04-27 15:38:17,886 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:17,886 shutil.rmtree worked.
+2026-04-27 15:38:17,886 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:17,886 shutil.rmtree worked.
+2026-04-27 15:38:17,886 Cancelling tasks.
+2026-04-27 15:38:17,886 Exiting Kaleido/Choreo
+2026-04-27 15:38:17,886 Could not set DPI metadata for nanoplot/NumberOfReads_Over_Time.png: No module named 'PIL'
+2026-04-27 15:38:17,886 Saved nanoplot/NumberOfReads_Over_Time.png as png (dpi=300)
+2026-04-27 15:38:17,894 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:17,895 shutil.rmtree worked.
+2026-04-27 15:38:17,895 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:17,895 shutil.rmtree worked.
+2026-04-27 15:38:17,906 Chromium init'ed with kwargs {}
+2026-04-27 15:38:17,906 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:17,907 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpccsk9o98.
+2026-04-27 15:38:17,907 Opening browser.
+2026-04-27 15:38:17,907 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp7y7vk91p.
+2026-04-27 15:38:17,907 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp7y7vk91p
+2026-04-27 15:38:18,265 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpccsk9o98/index.html
+2026-04-27 15:38:18,265 Waiting on all navigates
+2026-04-27 15:38:19,016 All navigates done, putting them all in queue.
+2026-04-27 15:38:19,017 Getting tab from queue (has 1)
+2026-04-27 15:38:19,017 Got DD77
+2026-04-27 15:38:19,017 Processing Number_of_active_pores_over_time.png
+2026-04-27 15:38:19,017 Sending big command for Number_of_active_pores_over_time.png.
+2026-04-27 15:38:19,071 Sent big command for Number_of_active_pores_over_time.png.
+2026-04-27 15:38:19,072 Reloading tab DD77 before return.
+2026-04-27 15:38:19,133 Putting tab DD77 back (queue size: 0).
+2026-04-27 15:38:19,133 Waiting for all cleanups to finish.
+2026-04-27 15:38:19,133 Exiting Kaleido
+2026-04-27 15:38:19,133 Closing browser.
+2026-04-27 15:38:19,134 Closing browser.
+2026-04-27 15:38:19,135 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:19,135 shutil.rmtree worked.
+2026-04-27 15:38:19,135 Cancelling tasks.
+2026-04-27 15:38:19,135 Exiting Kaleido/Choreo
+2026-04-27 15:38:19,233 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:19,233 shutil.rmtree worked.
+2026-04-27 15:38:19,233 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:19,233 shutil.rmtree worked.
+2026-04-27 15:38:19,233 Cancelling tasks.
+2026-04-27 15:38:19,233 Exiting Kaleido/Choreo
+2026-04-27 15:38:19,234 Could not set DPI metadata for nanoplot/ActivePores_Over_Time.png: No module named 'PIL'
+2026-04-27 15:38:19,234 Saved nanoplot/ActivePores_Over_Time.png as png (dpi=300)
+2026-04-27 15:38:19,252 Chromium init'ed with kwargs {}
+2026-04-27 15:38:19,253 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:19,253 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp58qvrqp2.
+2026-04-27 15:38:19,253 Opening browser.
+2026-04-27 15:38:19,253 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp_35zdzj7.
+2026-04-27 15:38:19,253 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp_35zdzj7
+2026-04-27 15:38:19,644 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp58qvrqp2/index.html
+2026-04-27 15:38:19,644 Waiting on all navigates
+2026-04-27 15:38:21,105 All navigates done, putting them all in queue.
+2026-04-27 15:38:21,105 Getting tab from queue (has 1)
+2026-04-27 15:38:21,107 Got 7642
+2026-04-27 15:38:21,107 Processing Violin_plot_of_read_lengths_over_time.png
+2026-04-27 15:38:21,107 Sending big command for Violin_plot_of_read_lengths_over_time.png.
+2026-04-27 15:38:21,178 Sent big command for Violin_plot_of_read_lengths_over_time.png.
+2026-04-27 15:38:21,179 Reloading tab 7642 before return.
+2026-04-27 15:38:21,238 Putting tab 7642 back (queue size: 0).
+2026-04-27 15:38:21,239 Waiting for all cleanups to finish.
+2026-04-27 15:38:21,239 Exiting Kaleido
+2026-04-27 15:38:21,239 Closing browser.
+2026-04-27 15:38:21,240 Closing browser.
+2026-04-27 15:38:21,241 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:21,241 shutil.rmtree worked.
+2026-04-27 15:38:21,241 Cancelling tasks.
+2026-04-27 15:38:21,241 Exiting Kaleido/Choreo
+2026-04-27 15:38:21,340 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:21,340 shutil.rmtree worked.
+2026-04-27 15:38:21,340 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:21,340 shutil.rmtree worked.
+2026-04-27 15:38:21,340 Cancelling tasks.
+2026-04-27 15:38:21,340 Exiting Kaleido/Choreo
+2026-04-27 15:38:21,341 Could not set DPI metadata for nanoplot/TimeLengthViolinPlot.png: No module named 'PIL'
+2026-04-27 15:38:21,341 Saved nanoplot/TimeLengthViolinPlot.png as png (dpi=300)
+2026-04-27 15:38:21,355 Chromium init'ed with kwargs {}
+2026-04-27 15:38:21,355 Found chromium path: /Users/eoz639/miniforge3/envs/genosar_pt1_env/lib/python3.12/site-packages/choreographer/cli/browser_exe/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+2026-04-27 15:38:21,355 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp87nl6te3.
+2026-04-27 15:38:21,355 Opening browser.
+2026-04-27 15:38:21,355 Temp directory created: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpmuguap41.
+2026-04-27 15:38:21,355 Temporary directory at: /var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmpmuguap41
+2026-04-27 15:38:21,742 Conforming 1 to file:///var/folders/mh/wgnr4x3n05dg2nh06s25r5z80000gp/T/tmp87nl6te3/index.html
+2026-04-27 15:38:21,742 Waiting on all navigates
+2026-04-27 15:38:22,566 All navigates done, putting them all in queue.
+2026-04-27 15:38:22,567 Getting tab from queue (has 1)
+2026-04-27 15:38:22,567 Got 910B
+2026-04-27 15:38:22,567 Processing Violin_plot_of_quality_over_time.png
+2026-04-27 15:38:22,567 Sending big command for Violin_plot_of_quality_over_time.png.
+2026-04-27 15:38:22,651 Sent big command for Violin_plot_of_quality_over_time.png.
+2026-04-27 15:38:22,653 Reloading tab 910B before return.
+2026-04-27 15:38:22,711 Putting tab 910B back (queue size: 0).
+2026-04-27 15:38:22,711 Waiting for all cleanups to finish.
+2026-04-27 15:38:22,711 Exiting Kaleido
+2026-04-27 15:38:22,711 Closing browser.
+2026-04-27 15:38:22,712 Closing browser.
+2026-04-27 15:38:22,713 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,713 shutil.rmtree worked.
+2026-04-27 15:38:22,713 Cancelling tasks.
+2026-04-27 15:38:22,713 Exiting Kaleido/Choreo
+2026-04-27 15:38:22,813 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,813 shutil.rmtree worked.
+2026-04-27 15:38:22,814 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,814 shutil.rmtree worked.
+2026-04-27 15:38:22,814 Cancelling tasks.
+2026-04-27 15:38:22,814 Exiting Kaleido/Choreo
+2026-04-27 15:38:22,814 Could not set DPI metadata for nanoplot/TimeQualityViolinPlot.png: No module named 'PIL'
+2026-04-27 15:38:22,814 Saved nanoplot/TimeQualityViolinPlot.png as png (dpi=300)
+2026-04-27 15:38:22,815 Created timeplots.
+2026-04-27 15:38:22,815 Writing html report.
+2026-04-27 15:38:22,821 Finished!
+2026-04-27 15:38:22,838 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,838 shutil.rmtree worked.
+2026-04-27 15:38:22,838 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,838 shutil.rmtree worked.
+2026-04-27 15:38:22,838 TemporaryDirectory.cleanup() worked.
+2026-04-27 15:38:22,838 shutil.rmtree worked.

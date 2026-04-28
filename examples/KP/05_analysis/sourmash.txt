@@ -1,0 +1,2 @@
+ID,status,superkingdom,phylum,class,order,family,genus,species,strain
+KP,found,Pseudomonadati,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Klebsiella pneumoniae,

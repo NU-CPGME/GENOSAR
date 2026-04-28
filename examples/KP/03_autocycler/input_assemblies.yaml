@@ -1,0 +1,339 @@
+input_assemblies_count: 24
+input_assemblies_total_contigs: 95
+input_assemblies_total_length: 136220759
+compressed_unitig_count: 1690
+compressed_unitig_total_length: 5564016
+input_assembly_details:
+- filename: 02_assemblies/assembly_01_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538715
+  - name: contig_2
+    description: circular=true depth=41
+    length: 9294
+  - name: contig_3
+    description: circular=true depth=50
+    length: 46614
+  - name: contig_4
+    description: circular=true depth=68
+    length: 74885
+- filename: 02_assemblies/assembly_01_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.328
+    length: 5538756
+  - name: utg000002c
+    description: circular=true depth=49.136
+    length: 46614
+  - name: utg000003c
+    description: circular=true depth=67.930
+    length: 74885
+  - name: utg000004c
+    description: circular=true depth=38.425
+    length: 9294
+- filename: 02_assemblies/assembly_01_raven.fasta
+  contigs:
+  - name: Utg1410
+    description: LN:i:9291 RC:i:8 XO:i:1
+    length: 9291
+  - name: Utg1412
+    description: LN:i:5588451 RC:i:673 XO:i:1
+    length: 5588451
+  - name: Utg1414
+    description: LN:i:46609 RC:i:7 XO:i:1
+    length: 46609
+  - name: Utg1416
+    description: LN:i:74878 RC:i:12 XO:i:1
+    length: 74878
+- filename: 02_assemblies/assembly_02_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538714
+  - name: contig_2
+    description: circular=true depth=36
+    length: 9295
+  - name: contig_3
+    description: circular=true depth=43
+    length: 46614
+  - name: contig_4
+    description: circular=true depth=70
+    length: 74885
+- filename: 02_assemblies/assembly_02_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.274
+    length: 5538870
+  - name: utg000002c
+    description: circular=true depth=44.075
+    length: 46614
+  - name: utg000003c
+    description: circular=true depth=34.456
+    length: 9294
+  - name: utg000004c
+    description: circular=true depth=70.229
+    length: 74885
+- filename: 02_assemblies/assembly_02_raven.fasta
+  contigs:
+  - name: Utg1440
+    description: LN:i:46609 RC:i:6 XO:i:1
+    length: 46609
+  - name: Utg1442
+    description: LN:i:74884 RC:i:11 XO:i:1
+    length: 74884
+  - name: Utg1444
+    description: LN:i:9289 RC:i:5 XO:i:1
+    length: 9289
+  - name: Utg1446
+    description: LN:i:5538706 RC:i:692 XO:i:1
+    length: 5538706
+- filename: 02_assemblies/assembly_03_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=49
+    length: 5538716
+  - name: contig_2
+    description: circular=true depth=67
+    length: 74885
+  - name: contig_3
+    description: circular=true depth=40
+    length: 46614
+  - name: contig_4
+    description: circular=true depth=39
+    length: 9294
+- filename: 02_assemblies/assembly_03_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.332
+    length: 5538725
+  - name: utg000002c
+    description: circular=true depth=39.832
+    length: 46614
+  - name: utg000003c
+    description: circular=true depth=37.214
+    length: 9294
+  - name: utg000004c
+    description: circular=true depth=66.156
+    length: 74885
+- filename: 02_assemblies/assembly_03_raven.fasta
+  contigs:
+  - name: Utg1418
+    description: LN:i:9294 RC:i:8 XO:i:1
+    length: 9294
+  - name: Utg1420
+    description: LN:i:5538745 RC:i:673 XO:i:1
+    length: 5538745
+  - name: Utg1422
+    description: LN:i:74880 RC:i:14 XO:i:1
+    length: 74880
+  - name: Utg1424
+    description: LN:i:46611 RC:i:8 XO:i:1
+    length: 46611
+- filename: 02_assemblies/assembly_04_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538716
+  - name: contig_2
+    description: circular=true depth=63
+    length: 74885
+  - name: contig_3
+    description: circular=true depth=36
+    length: 9294
+  - name: contig_4
+    description: circular=true depth=36
+    length: 46615
+- filename: 02_assemblies/assembly_04_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.601
+    length: 5538715
+  - name: utg000002c
+    description: circular=true depth=61.547
+    length: 74885
+  - name: utg000003c
+    description: circular=true depth=35.970
+    length: 46614
+  - name: utg000004c
+    description: circular=true depth=34.879
+    length: 9294
+- filename: 02_assemblies/assembly_04_raven.fasta
+  contigs:
+  - name: Utg1366
+    description: LN:i:9294 RC:i:9 XO:i:1
+    length: 9294
+  - name: Utg1368
+    description: LN:i:5538715 RC:i:639 XO:i:1
+    length: 5538715
+  - name: Utg1370
+    description: LN:i:46610 RC:i:10 XO:i:1
+    length: 46610
+  - name: Utg1372
+    description: LN:i:74880 RC:i:16 XO:i:1
+    length: 74880
+- filename: 02_assemblies/assembly_05_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=49
+    length: 5538716
+  - name: contig_2
+    description: depth=31
+    length: 11490
+  - name: contig_3
+    description: circular=true depth=35
+    length: 46614
+  - name: contig_4
+    description: circular=true depth=71
+    length: 74885
+- filename: 02_assemblies/assembly_05_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.435
+    length: 5538711
+  - name: utg000002c
+    description: circular=true depth=69.166
+    length: 74885
+  - name: utg000003c
+    description: circular=true depth=35.467
+    length: 46614
+  - name: utg000004c
+    description: circular=true depth=33.172
+    length: 9294
+- filename: 02_assemblies/assembly_05_raven.fasta
+  contigs:
+  - name: Utg1416
+    description: LN:i:9294 RC:i:9 XO:i:1
+    length: 9294
+  - name: Utg1418
+    description: LN:i:5538713 RC:i:671 XO:i:1
+    length: 5538713
+  - name: Utg1420
+    description: LN:i:46611 RC:i:8 XO:i:1
+    length: 46611
+  - name: Utg1422
+    description: LN:i:74879 RC:i:14 XO:i:1
+    length: 74879
+- filename: 02_assemblies/assembly_06_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538716
+  - name: contig_2
+    description: circular=true depth=38
+    length: 9294
+  - name: contig_3
+    description: circular=true depth=67
+    length: 74885
+  - name: contig_4
+    description: circular=true depth=42
+    length: 46614
+- filename: 02_assemblies/assembly_06_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.478
+    length: 5538713
+  - name: utg000002c
+    description: circular=true depth=66.661
+    length: 74885
+  - name: utg000003c
+    description: circular=true depth=36.077
+    length: 9294
+  - name: utg000004c
+    description: circular=true depth=40.902
+    length: 46614
+- filename: 02_assemblies/assembly_06_raven.fasta
+  contigs:
+  - name: Utg1342
+    description: LN:i:74871 RC:i:18 XO:i:1
+    length: 74871
+  - name: Utg1344
+    description: LN:i:9290 RC:i:13 XO:i:1
+    length: 9290
+  - name: Utg1348
+    description: LN:i:5538708 RC:i:630 XO:i:1
+    length: 5538708
+- filename: 02_assemblies/assembly_07_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538715
+  - name: contig_2
+    description: circular=true depth=16
+    length: 18498
+  - name: contig_3
+    description: circular=true depth=46
+    length: 46614
+  - name: contig_4
+    description: circular=true depth=72
+    length: 74885
+- filename: 02_assemblies/assembly_07_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.395
+    length: 5538720
+  - name: utg000002c
+    description: circular=true depth=71.315
+    length: 74885
+  - name: utg000003c
+    description: circular=true depth=44.996
+    length: 46614
+  - name: utg000004c
+    description: circular=true depth=34.123
+    length: 9294
+- filename: 02_assemblies/assembly_07_raven.fasta
+  contigs:
+  - name: Utg1420
+    description: LN:i:9293 RC:i:10 XO:i:1
+    length: 9293
+  - name: Utg1422
+    description: LN:i:5588931 RC:i:676 XO:i:1
+    length: 5588931
+  - name: Utg1424
+    description: LN:i:74842 RC:i:12 XO:i:1
+    length: 74842
+- filename: 02_assemblies/assembly_08_flye.fasta
+  contigs:
+  - name: contig_1
+    description: circular=true depth=48
+    length: 5538716
+  - name: contig_2
+    description: circular=true depth=50
+    length: 46626
+  - name: contig_3
+    description: depth=12
+    length: 3299
+  - name: contig_4
+    description: circular=true depth=77
+    length: 74890
+  - name: contig_5
+    description: circular=true depth=36
+    length: 9294
+- filename: 02_assemblies/assembly_08_miniasm.fasta
+  contigs:
+  - name: utg000001c
+    description: circular=true depth=48.164
+    length: 5538702
+  - name: utg000002c
+    description: circular=true depth=49.018
+    length: 46614
+  - name: utg000003c
+    description: circular=true depth=75.068
+    length: 74882
+  - name: utg000004c
+    description: circular=true depth=35.882
+    length: 9294
+- filename: 02_assemblies/assembly_08_raven.fasta
+  contigs:
+  - name: Utg1442
+    description: LN:i:9290 RC:i:10 XO:i:1
+    length: 9290
+  - name: Utg1444
+    description: LN:i:5589040 RC:i:688 XO:i:1
+    length: 5589040
+  - name: Utg1446
+    description: LN:i:127334 RC:i:8 XO:i:0
+    length: 127334
+  - name: Utg1448
+    description: LN:i:74878 RC:i:12 XO:i:1
+    length: 74878

@@ -1,0 +1,2 @@
+name	input_read_count	input_read_bases	input_read_n50	pass_cluster_count	fail_cluster_count	overall_clustering_score	untrimmed_cluster_size	untrimmed_cluster_distance	trimmed_cluster_size	trimmed_cluster_median	trimmed_cluster_mad	consensus_assembly_bases	consensus_assembly_unitigs	consensus_assembly_fully_resolved
+KP	50863	552854350	21612	4	3	0.948	[24,24,21,23]	[0.0000732,0.00373,0.000464,0.00264]	[18,15,15,18]	[5538715,74885,46614,9294]	[1,0,0,0]	5669509	4	true

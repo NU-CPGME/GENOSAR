@@ -1,0 +1,5 @@
+Contig	Gene_Reoriented	Start	Strand	Top_Hit	Top_Hit_Length	Covered_Length	Coverage	Identical_AAs	Identity_Percentage	Overlapping_Contig_End
+4	autocomplete_method_nearest	927	forward	autocomplete_method_nearest	autocomplete_method_nearest	autocomplete_method_nearest	autocomplete_method_nearest	autocomplete_method_nearest	autocomplete_method_nearest	autocomplete_method_nearest
+3	repA	6697	reverse	UniRef90_G1BWP5	243	225	92.59	75	33.33	False
+2	repA	44600	forward	UniRef90_A0A0E3KI91	297	297	100.0	296	99.66	False
+1	dnaA	4204532	forward	sp~B5XT51~DNAA_KLEP3	467	467	100.0	465	99.57	False

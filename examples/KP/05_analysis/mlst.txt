@@ -1,0 +1,2 @@
+file	gapA	infB	mdh	pgi	phoE	rpoB	tonB	ST
+KP	3	3	1	1	1	1	79	258

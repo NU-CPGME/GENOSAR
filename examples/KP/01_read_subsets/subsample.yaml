@@ -1,0 +1,28 @@
+input_read_count: 50863
+input_read_bases: 552854350
+input_read_n50: 21612
+output_reads:
+- count: 25347
+  bases: 275499848
+  n50: 21604
+- count: 25347
+  bases: 275229238
+  n50: 21682
+- count: 25347
+  bases: 275134240
+  n50: 21561
+- count: 25347
+  bases: 276215815
+  n50: 21644
+- count: 25347
+  bases: 275646240
+  n50: 21608
+- count: 25347
+  bases: 275840664
+  n50: 21561
+- count: 25347
+  bases: 275837135
+  n50: 21651
+- count: 25347
+  bases: 274932119
+  n50: 21597

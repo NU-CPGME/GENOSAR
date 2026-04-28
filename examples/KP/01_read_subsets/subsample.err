@@ -1,0 +1,71 @@
+
+[1;4;93mStarting autocycler subsample[0m [2m(2026-04-27 15:38:29)[0m
+[2m    This command subsamples a long-read set into subsets that are maximally
+independent from each other.[0m
+
+Settings:
+  --reads /Users/eoz639/test/genosar/KP.fastq.gz
+  --out_dir 01_read_subsets
+  --genome_size 5500000
+  --count 8
+  --min_read_depth 25
+  --seed 0
+
+Input FASTQ:
+  Read count: 50863
+  Read bases: 552854350
+  Read N50 length: 21612 bp
+
+
+[1;4;93mCalculating subset size[0m [2m(2026-04-27 15:38:32)[0m
+[2m    Autocycler will now calculate the number of reads to put in each subset.[0m
+
+Total read depth: 100.5×
+Mean read length: 10869 bp
+
+Calculating subset sizes:
+  subset_depth = 25 * log_2(4 * total_depth / 25) / 2
+               = 50.1x
+  reads per subset: 25347
+
+
+[1;4;93mSubsetting reads[0m [2m(2026-04-27 15:38:32)[0m
+[2m    The reads are now shuffled and grouped into subset files.[0m
+
+subset 1:
+  reads 1-25347
+  01_read_subsets/sample_01.fastq
+
+subset 2:
+  reads 6359-31705
+  01_read_subsets/sample_02.fastq
+
+subset 3:
+  reads 12717-38063
+  01_read_subsets/sample_03.fastq
+
+subset 4:
+  reads 19075-44421
+  01_read_subsets/sample_04.fastq
+
+subset 5:
+  reads 25433-50779
+  01_read_subsets/sample_05.fastq
+
+subset 6:
+  reads 31790-50863 and 1-6273
+  01_read_subsets/sample_06.fastq
+
+subset 7:
+  reads 38148-50863 and 1-12631
+  01_read_subsets/sample_07.fastq
+
+subset 8:
+  reads 44506-50863 and 1-18989
+  01_read_subsets/sample_08.fastq
+
+
+[1;4;93mFinished![0m [2m(2026-04-27 15:38:37)[0m
+[2m    You can now assemble each of the subsampled read sets to produce a set of
+assemblies for input into Autocycler compress.[0m
+
