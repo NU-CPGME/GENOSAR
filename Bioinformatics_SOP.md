@@ -94,14 +94,18 @@ done < barcodes.txt
 >[!NOTE] All subsequent steps will be repeated for each sequenced isolate
 > Perform these steps in a data analysis directory separate from the MinKnow output directory
 
-#### 6.  Set the analysis variables for your system. 
+#### 6.  Set the analysis variables for your system.
 
 ```Shell
-threads=8
-busco_db=`realpath path/to/enterobacteriaceae_odb12`
-sourmash_db=`realpath /path/to/gammaproteobacteria.lca.json.gz`
-mlst=`realpath /path/to/mlst_profiler.pl`
+gsar_threads=8
+gsar_busco_db=`realpath path/to/enterobacteriaceae_odb12`
+gsar_sourmash_db=`realpath /path/to/gammaproteobacteria.lca.json.gz`
+gsar_mlst=`realpath /path/to/mlst_profiler.pl`
 ```
+
+
+
+
 
 <br>
 
@@ -282,7 +286,7 @@ Will provide profiles and allele sequences from Pasteur (K pneumo) / PubMLST (E 
 For the `-o` option, use "KP" for K pneumonaie and "EC" for E coli.
 
 ```Shell
-${mlst} \
+perl ${mlst} \
     -o KP \ 
     -f ${iso}.fasta > mlst.txt
 ```
