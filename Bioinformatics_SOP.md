@@ -27,40 +27,40 @@
     
 ```Shell
 git clone https://github.com/NU-CPGME/GENOSAR
+cd GENOSAR
 ```
 
-5. Install the conda environments
+5. Set environment variables 
 
 ```Shell
-mamba env create -y -f GENOSAR/conda_environments/genosar_pt1_environment.yaml
-mamba env create -y -f GENOSAR/conda_environments/genosar_pt2_environment.yaml
+shellname=$( echo $0 | perl -pe "s/^-//" )
+## shellname will be "zsh" on MacOS systems and "bash" on most Linux systems.
+
+echo "export gsar_dir=$( realpath . )" >> ~/.${shellname}rc
+echo "export gsar_threads=$( nproc --all )" >> ~/.${shellname}rc
+
+source ~/.${shellname}rc
 ```
 
-6. Download the BUSCO database
+> [!NOTE]
+> The commands above set the number of threads to the maximum number available on your system by default. If you would like to use fewer threads in the analyses, change the value of `gsar_threads` above from `$( nproc --all )` to the maximum number of threads to be used. For example `gsar_threads=8`. Or edit the .bashrc  or .zshrc file using nano or another text editor.
+
+6. Install the conda environments
 
 ```Shell
-cd GENOSAR/databases
+mamba env create -y -f ${gsar_dir}/conda_environments/genosar_pt1_environment.yaml
+mamba env create -y -f ${gsar_dir}/conda_environments/genosar_pt2_environment.yaml
+```
+
+7. Download the BUSCO database
+
+```Shell
+cd ${gsar_dir}/databases
 conda activate genosar_pt2_env
 busco --download enterobacteriaceae_odb12
 conda deactivate
 cd ..
 ```
-
-7. Set environment variables 
-
-```Shell
-shellname=$( echo $0 | perl -pe "s/^-//" )
-#shellname should be "zsh" on MacOS systems and "bash" on most Linux systems.
-
-echo "export gsar_busco_db=$( realpath databases/busco_downloads/lineages/enterobacteriaceae_odb12 )" >> ~/.${shellname}rc
-echo "export gsar_sourmash_db=$( realpath databases/gammaproteobacteria.lca.json.gz )" >> ~/.${shellname}rc
-echo "export gsar_mlst=$( realpath scripts/mlst_profiler/mlst_profiler.pl )" >> ~/.${shellname}rc
-echo "export gsar_threads=$( nproc --all ) >> ~/.${shellname}rc
-
-source ~/.${shellname}rc
-```
-
-The commands above set the number of threads to the maximum number available on your system by default. If you would like to use fewer threads in the analyses, change the value of `gsar_threads` above from `$( nproc --all )` to the maximum number of threads to be used. For example `gsar_threads=8`. Or edit the .bashrc  or .zshrc file using nano or another text editor.
 
 #### 1.  Study naming for isolates and sequences
 
@@ -169,6 +169,7 @@ reads=$( realpath /path/to/GSAR-XX-YYYY-MM-DD.fastq.gz ) ## Example path to read
 ```Shell
 mkdir -p $iso
 cd $iso
+mkdir -p ${iso}_results
 ```
 
 <br>
@@ -185,12 +186,11 @@ conda activate genosar_pt1_env
 
 ```Shell
 nanoplot \
-    -t $gsar_threads \
-    -o nanoplot \
-    --fastq_rich $reads 
+    -t ${gsar_threads} \
+    -o 01_nanoplot \
+    --fastq_rich $reads
+cp 01_nanoplot/NanoStats.txt ${iso}_results/${iso}_nanoplot.txt 
 ```
-
-Upload the `nanopore/NanoStats.txt` file.
 
 <br>
 
@@ -201,7 +201,7 @@ a. Subsamble nanopore reads
 ```Shell
 autocycler subsample \
     --reads $reads \
-    --out_dir 01_read_subsets \
+    --out_dir 02_read_subsets \
     --genome_size 5500000 \
     --count 8 2> >(tee subsample.err)
 ``` 
@@ -209,7 +209,7 @@ autocycler subsample \
 b. Generate assemblies
 
 ```Shell
-mkdir -p 02_assemblies
+mkdir -p 03_assemblies
 for subset in {1..8}
 do
     subset=$(printf "%02d" $subset)
@@ -218,13 +218,13 @@ do
     echo "Running ${assembler} on read subset ${subset}"
     autocycler helper \
         ${assembler} \
-        --reads 01_read_subsets/sample_${subset}.fastq \
-        --out_prefix 02_assemblies/assembly_${subset}_${assembler} \
+        --reads 02_read_subsets/sample_${subset}.fastq \
+        --out_prefix 03_assemblies/assembly_${subset}_${assembler} \
         --genome_size 5500000 \
         --read_type ont_r10 \
         --threads ${gsar_threads} \
-        > >(tee 02_assemblies/assembly_${subset}_${assembler}.out) \
-        2> >(tee 02_assemblies/assembly_${subset}_${assembler}.err)
+        > >(tee 03_assemblies/assembly_${subset}_${assembler}.out) \
+        2> >(tee 03_assemblies/assembly_${subset}_${assembler}.err)
     done
 done
 ```
@@ -233,13 +233,13 @@ c. Reconcile assemblies
 
 ```Shell
 autocycler compress \
-    --assemblies_dir 02_assemblies \
-    --autocycler_dir 03_autocycler \
+    --assemblies_dir 03_assemblies \
+    --autocycler_dir 04_autocycler \
     --threads ${gsar_threads}
 
-autocycler cluster --autocycler_dir 03_autocycler
+autocycler cluster --autocycler_dir 04_autocycler
 
-for c in 03_autocycler/clustering/qc_pass/cluster_*
+for c in 04_autocycler/clustering/qc_pass/cluster_*
 do
     c_name=`basename $c`
     echo "$c_name"
@@ -249,46 +249,47 @@ do
 done
 
 autocycler combine \
-    --autocycler_dir 03_autocycler \
-    --in_gfas 03_autocycler/clustering/qc_pass/cluster_*/5_final.gfa
+    --autocycler_dir 04_autocycler \
+    --in_gfas 04_autocycler/clustering/qc_pass/cluster_*/5_final.gfa
 
-autocycler table > metrics.tsv
-autocycler table -a \. -n $iso >> metrics.tsv
+autocycler table > ${iso}_results/autocycler.tsv
+autocycler table -a \. -n $iso >> ${iso}_results/${iso}_autocycler.txt
 
 BandageNG image \
-    03_autocycler/consensus_assembly.gfa \
-    03_autocycler/consensus_assembly.png
+    04_autocycler/consensus_assembly.gfa \
+    04_autocycler/consensus_assembly.png
 ```
 
-d. View the `03_autocycler/consensus_assembly.png` file to evaluate for assembly issues.
+d. View the `04_autocycler/consensus_assembly.png` file to check for assembly issues.
 
 <br>
 
-#### 10. Medaka polishing and contig rotation
+#### 10. Polish with medaka
 
 ```Shell
 medaka_consensus \
   -i $reads \
-  -d 03_autocycler/consensus_assembly.fasta \
-  -o 04_medaka \
-  -t $gsar_threads \
+  -d 04_autocycler/consensus_assembly.fasta \
+  -o 05_medaka \
+  -t ${gsar_threads} \
   -f --bacteria  
+```
 
-mkdir -p 05_analysis
-cd 05_analysis
-cp ../04_medaka/consensus.fasta .
+#### 11. Rotate sequences with dnaapler
+
+```Shell
 dnaapler all \
-  -i consensus.fasta \
-  -o dnaapler \
-  -t $gsar_threads \
+  -i ../05_medaka/consensus.fasta \
+  -o 06_dnaapler \
+  -t ${gsar_threads} \
   -a nearest \
   -f
-cp dnaapler/dnaapler_reoriented.fasta ${iso}.fasta
+cp 06_dnaapler/dnaapler_reoriented.fasta ${iso}.fasta
 ```
 
 <br>
 
-#### 11. Activate the second conda environment
+#### 12. Activate the second conda environment
 
 ```Shell
 conda deactivate
@@ -297,24 +298,28 @@ conda activate genosar_pt2_env
 
 <br>
 
-#### 12. Quality control with BUSCO
+#### 13. Quality control with BUSCO
 
 Use BUSCO to assess completeness and contamination levels.
 
 ```Shell
-busco -i ${iso}.fasta \
+mkdir -p 07_analysis
+cd 07_analysis
+
+busco -i ../${iso}.fasta \
     -m genome \
-    -l $gsar_busco_db \
+    -l ${gsar_dir}/databases/busco_downloads/lineages/enterobacteriaceae_odb12 \
     --offline \
     -o busco \
-    -c $gsar_threads
+    -c ${gsar_threads}
+
+cp busco/short_summary.specific.enterobacteriaceae_odb12.busco.txt \
+  ../${iso}_results/${iso}_busco.txt
 ```
 
 <br>
 
-#### 13.  Species identification
-
-Using sourmash seems to be one of the quickest and most straighforward ways to do rough species identification programatically.
+#### 14.  Species estimation with sourmash
 
 We'll use a [custom Gammaproteobacteria database](sourmash_db.md) generated from NCBI reference sequences and override the default threshold of 5 to improve the specificity of the species identification.
 
@@ -322,34 +327,40 @@ We'll use a [custom Gammaproteobacteria database](sourmash_db.md) generated from
 sourmash sketch dna \
     --name $iso \
     -o ${iso}.fasta.sig \
-    ${iso}.fasta
+    ../${iso}.fasta
 sourmash lca classify \
-    --db ${gsar_sourmash_db} \
+    --db ${gsar_dir}/databases/gammaproteobacteria.lca.json.gz \
     --threshold 10 \
-    --query ${iso}.fasta.sig > sourmash.txt
+    --query ${iso}.fasta.sig | \
+    tee ../${iso}_results/${iso}_sourmash.txt
 ```
+
+Check the output of the commands to verify the species for the next two steps. 
 
 <br>
 
-#### 14. Sequence typing
+#### 15. Sequence typing
 
 For the `-o` option, use "KP" for *K. pneumoniae* and "EC" for *E coli*.
 
 ```Shell
-perl ${gsar_mlst} -o KP -f ${iso}.fasta > mlst.txt
+perl ${gsar_dir}/scripts/mlst_profiler/mlst_profiler.pl \
+    -o KP \
+    -f ../${iso}.fasta | \
+    tee ../${iso}_results/${iso}_mlst.txt
 ```
 
 <br>
 
-#### 15. AMRFinder
+#### 16. AMRFinder
 
 Options for `-O` are "Klebsiella_pneumoniae" or "Escherichia"
 
-```
+```Shell
 amrfinder \
     --plus \
-    -n ${iso}.fasta \
+    -n ../${iso}.fasta \
     --name $iso \
-    -O Klebsiella_pneumoniae \
-    -o amrfinder.txt 
+    -O Klebsiella_pneumoniae | \
+    tee ../${iso}_results/${iso}_amrfinder.txt 
 ```
