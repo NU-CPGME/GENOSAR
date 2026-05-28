@@ -6,4 +6,4 @@
 
 ---
 
-[Standard Operating Procedure for Data Analysis](Bioinformatics_SOP.md)
+[Standard Operating Procedures for Sequencing and Data Analysis](https://github.com/NU-CPGME/GENOSAR/wiki)
