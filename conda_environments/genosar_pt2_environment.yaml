@@ -8,3 +8,4 @@ dependencies:
   - ncbi-amrfinderplus
   - barrnap=0.9
   - csvlens
+  - plasmidfinder=3.0.3
